@@ -1,16 +1,13 @@
 import React from 'react';
-import { Routes, Route, BrowserRouter as Router } from 'react-router-dom'; // Import BrowserRouter as Router
+import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
 
-import CafePage from '../pages/cafe';
-import EmployeesPage from '../pages/employees';
+import Weather from '../pages/weather';
 
 const AppRouter = () => {
     return (
-        <Router> {/* Wrap your entire app with the Router component */}
+        <Router> 
             <Routes>
-                <Route path="/" element={<CafePage />} />
-                <Route path="employees/" element={<EmployeesPage />} />
-                <Route path="employees/:id" element={<EmployeesPage />} />
+                <Route path="/" element={<Weather />} />
             </Routes>
         </Router>
     );

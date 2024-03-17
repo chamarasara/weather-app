@@ -1,0 +1,25 @@
+.container {
+  margin: 0 auto;
+}
+th{
+  color: rgb(48, 48, 114);
+}
+td{
+  color: rgb(50, 50, 50);
+}
+
+.temp{
+  color: rgb(33, 33, 224);
+}
+
+.white-title{
+  color: white;
+}
+
+th{
+  color: #115eae;
+}
+
+h3{
+  color: #115eae;
+}

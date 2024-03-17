@@ -1,5 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
+import './Weather.css';
 import AppRouter from './routes';
 
 function App() {

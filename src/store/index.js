@@ -1,12 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit'
-import cafeSlice from '../pages/cafe/slices';
-import employeesSlice from '../pages/employees/slices'
+import weatherSlice from '../pages/weather/slices'
 
 
 
 const reducer = {
-  cafes: cafeSlice,
-  employees: employeesSlice
+  weather: weatherSlice
   
 }
 

@@ -123,42 +123,42 @@ const Weather = () => {
               <tbody>
                 <tr>
                   <th>Minimum Temp</th>
-                  <td>{selectedWeather?.main?.temp_min}°C</td>
+                  <td>{selectedWeather?.main?.temp_min ?? "N/A"}°C</td>
                 </tr>
                 <tr>
                   <th>Maximum Temp</th>
-                  <td>{selectedWeather?.main?.temp_max}°C</td>
+                  <td>{selectedWeather?.main?.temp_max ?? "N/A"}°C</td>
                 </tr>
                 <tr>
                   <th>Pressure</th>
-                  <td>{selectedWeather?.main?.pressure}hPa</td>
+                  <td>{selectedWeather?.main?.pressure ?? "N/A"}hPa</td>
                 </tr>
                 <tr>
                   <th>Humidity</th>
-                  <td>{selectedWeather?.main?.humidity}%</td>
+                  <td>{selectedWeather?.main?.humidity ?? "N/A"}%</td>
                 </tr>
                 <tr>
                   <th>Sea Level</th>
-                  <td>{selectedWeather?.main?.sea_level} m</td>
+                  <td>{selectedWeather?.main?.sea_level ?? "N/A"} m</td>
                 </tr>
                 <tr>
                   <th>Ground Level</th>
-                  <td>{selectedWeather?.main?.grnd_level} m</td>
+                  <td>{selectedWeather?.main?.grnd_level ?? "N/A"} m</td>
                 </tr>
                 <tr>
                   <th>Visibility</th>
-                  <td>{selectedWeather?.visibility / 1000} Km</td>
+                  <td>{selectedWeather?.visibility ? selectedWeather?.visibility / 1000 : "N/A"} Km</td>
                 </tr>
                 <tr>
                   <th>Wind</th>
-                  <td>{selectedWeather?.wind?.speed} m/s <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-compass" viewBox="0 0 16 16">
+                  <td>{selectedWeather?.wind?.speed ?? "N/A"} m/s <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-compass" viewBox="0 0 16 16">
                     <path d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016m6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0" />
                     <path d="m6.94 7.44 4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z" />
                   </svg> {getDirection(selectedWeather?.wind?.deg)}</td>
                 </tr>
                 <tr>
                   <th>Cordinates</th>
-                  <td>Lon: {selectedWeather?.coord?.lon} Lat: {selectedWeather?.coord?.lat}</td>
+                  <td>Lon: {selectedWeather?.coord?.lon ?? "N/A"} Lat: {selectedWeather?.coord?.lat ?? "N/A"}</td>
                 </tr>
               </tbody>
             </table>

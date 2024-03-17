@@ -27,7 +27,7 @@ const WeatherForm = ({ selectedCity, onCityChange }) => {
       });
   }, [city, dispatch]);
 
-  
+
   const handleCitySelect = (selectedOption) => {
     setCity(selectedOption);
     onCityChange(selectedOption);

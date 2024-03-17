@@ -6,7 +6,7 @@ const searchCities = (payload) => {
 };
 
 const getWeatherByCity = (payload) => {
-  const { lat, lon , units} = payload
+  const { lat, lon, units } = payload
   return api.weatherService.get(`/data/2.5/weather?lat=${lat}&lon=${lon}&units=${units}&appid=${process.env.REACT_APP_WEATHER_API_KEY}`);
 };
 

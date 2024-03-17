@@ -5,7 +5,7 @@ import Weather from '../pages/weather';
 
 const AppRouter = () => {
     return (
-        <Router> 
+        <Router>
             <Routes>
                 <Route path="/" element={<Weather />} />
             </Routes>
